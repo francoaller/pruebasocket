@@ -19,3 +19,4 @@ io.on('connection', (socket) => {
 });
 
 setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
+setInterval(() => io.emit('rand',  rand( 1 , 20), 1000) );
